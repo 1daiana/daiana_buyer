@@ -1,0 +1,8 @@
+@media screen and (max-width: 576px) {
+    .usa__list,
+    .turkey__list,
+    .china__list,
+    .contacts {
+      grid-template-columns: 1fr;
+    }
+}

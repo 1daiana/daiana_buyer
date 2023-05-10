@@ -1,0 +1,243 @@
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 2rem 2rem;
+}
+
+.title {
+  text-align: center;
+  font-weight: 600;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #f0ebf4;
+}
+
+body {
+  background: linear-gradient(45deg, #2c3531, #116466, #45a29e);
+}
+
+.header .nav .title {
+  color: #17252a;
+  text-transform: uppercase;
+  font-family: "Times New Roman";
+  margin-bottom: 0;
+}
+.header .nav .nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header .nav .nav__logo img {
+  width: 80px;
+  border-radius: 50%;
+  border: 2px solid #45a29e;
+}
+
+.usa__list,
+.turkey__list,
+.china__list,
+.contacts {
+  -ms-grid-columns: (1fr)[3];
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.usa__item,
+.turkey__item,
+.china__item {
+  height: 50px;
+  width: 100%;
+  background-color: #f0ebf4;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.usa__item:hover,
+.turkey__item:hover,
+.china__item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 10px 20px 5px #2c3531;
+          box-shadow: 0px 10px 20px 5px #2c3531;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.whatsapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.whatsapp a {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #f0ebf4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-top: 40px;
+}
+.whatsapp a:hover {
+  background: #dcefef;
+  color: #000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 5px #45a29e, 0 0 25px #45a29e, 0 0 50px #45a29e, 0 0 100px #45a29e;
+          box-shadow: 0 0 5px #45a29e, 0 0 25px #45a29e, 0 0 50px #45a29e, 0 0 100px #45a29e;
+}
+.whatsapp a span {
+  position: absolute;
+  display: block;
+}
+.whatsapp a span:nth-child(2) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#f0ebf4));
+  background: linear-gradient(90deg, transparent, #f0ebf4);
+  -webkit-animation: btn-anim1 1s linear infinite;
+          animation: btn-anim1 1s linear infinite;
+}
+@-webkit-keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+.whatsapp a span:nth-child(3) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#f0ebf4));
+  background: linear-gradient(180deg, transparent, #f0ebf4);
+  -webkit-animation: btn-anim2 1s linear infinite;
+          animation: btn-anim2 1s linear infinite;
+  -webkit-animation-delay: 0.25s;
+          animation-delay: 0.25s;
+}
+@-webkit-keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%, 100% {
+    top: 100%;
+  }
+}
+.whatsapp a span:nth-child(4) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#f0ebf4));
+  background: linear-gradient(270deg, transparent, #f0ebf4);
+  -webkit-animation: btn-anim3 1s linear infinite;
+          animation: btn-anim3 1s linear infinite;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+@-webkit-keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%, 100% {
+    right: 100%;
+  }
+}
+.whatsapp a span:nth-child(5) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#f0ebf4));
+  background: linear-gradient(360deg, transparent, #f0ebf4);
+  -webkit-animation: btn-anim4 1s linear infinite;
+          animation: btn-anim4 1s linear infinite;
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+@-webkit-keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%, 100% {
+    bottom: 100%;
+  }
+}
+
+footer .contacts {
+  place-items: center;
+}
+footer .contacts a {
+  color: #f0ebf4;
+}
+footer .contacts .gmail {
+  white-space: nowrap;
+}
+footer .contacts .gmail:hover {
+  color: green;
+}
+footer .contacts .inst:hover {
+  color: #c13584;
+}
+footer .contacts .tg:hover {
+  color: #229ed9;
+}
