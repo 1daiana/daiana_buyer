@@ -4,5 +4,6 @@
     .china__list,
     .contacts {
       grid-template-columns: 1fr;
+      background-color: aqua;
     }
 }
