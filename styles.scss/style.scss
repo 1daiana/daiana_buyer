@@ -1,4 +1,5 @@
 $main-color: #45a29e;
+$white-color: #f0ebf4;
 
 .container {
   max-width: 1160px;
@@ -21,7 +22,7 @@ $main-color: #45a29e;
   padding: 0.5rem 0;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
-  color: #f0ebf4;
+  color: $white-color;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
 .header {
   .nav {
     .title {
-      color: #17252a;
+      color: #f0ebf4;
       text-transform: uppercase;
       font-family: "Times New Roman";
       margin-bottom: 0;
@@ -42,7 +43,7 @@ body {
       & img {
         width: 80px;
         border-radius: 50%;
-        border: 2px solid #45a29e;
+        border: 2px solid $main-color;
       }
     }
   }
@@ -55,12 +56,22 @@ body {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.usa__item a,
+.turkey__item a,
+.china__item a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .usa__item,
 .turkey__item,
 .china__item {
   height: 50px;
   width: 100%;
-  background-color: #f0ebf4;
+  background-color: $white-color;
   display: grid;
   place-items: center;
   border-radius: 5px;
@@ -94,8 +105,8 @@ body {
     background: #dcefef;
     color: #000;
     border-radius: 5px;
-    box-shadow: 0 0 5px $main-color, 0 0 25px $main-color, 0 0 50px $main-color,
-      0 0 100px $main-color;
+    box-shadow: 0 0 5px $white-color, 0 0 25px $white-color, 0 0 50px $white-color,
+      0 0 100px $white-color;
   }
 
   & a span {
@@ -108,7 +119,7 @@ body {
     left: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(90deg, transparent, #f0ebf4);
+    background: linear-gradient(90deg, transparent, $white-color);
     animation: btn-anim1 1s linear infinite;
   }
 
@@ -127,7 +138,7 @@ body {
     right: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(180deg, transparent, #f0ebf4);
+    background: linear-gradient(180deg, transparent, $white-color);
     animation: btn-anim2 1s linear infinite;
     animation-delay: 0.25s;
   }
@@ -147,7 +158,7 @@ body {
     right: -100%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(270deg, transparent, #f0ebf4);
+    background: linear-gradient(270deg, transparent, $white-color);
     animation: btn-anim3 1s linear infinite;
     animation-delay: 0.5s;
   }
@@ -167,7 +178,7 @@ body {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(360deg, transparent, #f0ebf4);
+    background: linear-gradient(360deg, transparent, $white-color);
     animation: btn-anim4 1s linear infinite;
     animation-delay: 0.75s;
   }
