@@ -52,13 +52,15 @@ body {
 .usa__list,
 .turkey__list,
 .china__list,
+.japan__list,
 .contacts {
   grid-template-columns: repeat(3, 1fr);
 }
 
 .usa__item a,
 .turkey__item a,
-.china__item a {
+.china__item a,
+.japan__item a {
   width: 100%;
   height: 100%;
   display: flex;
@@ -68,7 +70,8 @@ body {
 
 .usa__item,
 .turkey__item,
-.china__item {
+.china__item,
+.japan__item {
   height: 50px;
   width: 100%;
   background-color: $white-color;
