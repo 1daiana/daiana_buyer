@@ -2,6 +2,7 @@
     .usa__list,
     .turkey__list,
     .china__list,
+    .japan__list,
     .contacts {
       grid-template-columns: 1fr;
     }
