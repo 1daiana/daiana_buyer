@@ -14,6 +14,16 @@
   padding-block: 2rem 2rem;
 }
 
+.brands-logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+}
+
+.brands-logo img {
+  width: 100%;
+}
+
 .title {
   text-align: center;
   font-weight: 600;
@@ -71,6 +81,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          gap: 10%;
 }
 
 .usa__item,
@@ -79,7 +90,7 @@ body {
 .japan__item {
   height: 50px;
   width: 100%;
-  background-color: #f0ebf4;
+  background-color: #ffffff;
   display: -ms-grid;
   display: grid;
   place-items: center;
